@@ -177,7 +177,7 @@ mp_uint_t ndarray_print_edgeitems = NDARRAY_PRINT_EDGEITEMS;
 //|     def __ge__(self, other: Union[array, _float]) -> ulab.array:
 //|         ...
 //|
-//|     def __iter__(self) -> Union[Iterator[array], Iterator[_float]]:
+//|     def __iter__(self) -> Iterator[Union[array, _float]]:
 //|         ...
 //|
 //|     def __getitem__(self, index: _Index) -> Union[array, _float]:
