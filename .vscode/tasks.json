@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "label": "Build Firmware",
+      "type": "shell",
+      "command": "MICROPY_MICROPYTHON=micropython/ports/ulab/micropython ./build.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ],
+  "version": "2.0.0"
+}

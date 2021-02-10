@@ -1,0 +1,50 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build Ulab and Debug tests/common/constructors.py",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/micropython/ports/unix/micropython",
+      "args": ["${workspaceFolder}/tests/common/constructors.py"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Build Firmware",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Build Ulab and Debug Active File",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/micropython/ports/unix/micropython",
+      "args": ["${file}"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Build Firmware",
+      "miDebuggerPath": "/usr/bin/gdb"
+    }
+  ]
+}

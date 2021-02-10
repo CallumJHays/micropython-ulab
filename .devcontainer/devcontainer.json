@@ -1,0 +1,12 @@
+{
+  "dockerFile": "../Dockerfile",
+  "remoteUser": "me",
+  "workspaceFolder": "/home/dev/ulab",
+  "extensions": [
+    "ms-vscode.cpptools",
+    "xaver.clang-format",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ninoseki.vscode-pylens"
+  ]
+}
