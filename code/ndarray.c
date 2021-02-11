@@ -758,6 +758,7 @@ STATIC uint8_t ndarray_init_helper(size_t n_args, const mp_obj_t *pos_args, mp_m
     static const mp_arg_t allowed_args[] = {
         { MP_QSTR_, MP_ARG_REQUIRED | MP_ARG_OBJ, {.u_rom_obj = mp_const_none } },
         { MP_QSTR_dtype, MP_ARG_KW_ONLY | MP_ARG_OBJ, {.u_obj = MP_ROM_INT(NDARRAY_FLOAT) } },
+        { MP_QSTR_strides, MP_ARG_KW_ONLY | MP_ARG_OBJ, {.u_obj = MP_ROM_INT(NDARRAY_FLOAT) } },
     };
 
     mp_arg_val_t args[MP_ARRAY_SIZE(allowed_args)];

@@ -29,7 +29,7 @@
         "${workspaceFolder}/micropython/ports/unix/variants/standard/",
         "${workspaceFolder}/code"
       ],
-      "compilerPath": "${workspaceFolder}/../xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
+      "compilerPath": "gcc",
       "cStandard": "c11",
       "browse": {
         "path": ["${workspaceFolder}/code"],
@@ -56,5 +56,5 @@
       }
     }
   ],
-  "version": 4
+  "version": 4,
 }

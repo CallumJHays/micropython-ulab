@@ -1,7 +1,8 @@
 {
   "dockerFile": "../Dockerfile",
   "remoteUser": "me",
-  "workspaceFolder": "/home/dev/ulab",
+  // TODO: stub support
+  // "initializeCommand": "micropy install || (pip install -r requirements.txt && micropy install)",
   "extensions": [
     "ms-vscode.cpptools",
     "xaver.clang-format",
